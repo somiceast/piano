@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - piano_room@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="piano_room">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="laravel"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="sys"/>
+    <schema id="7" name="test"/>
+    <table id="8" parent="1" name="migrations"/>
+    <table id="9" parent="1" name="pianos"/>
+    <table id="10" parent="1" name="records"/>
+    <table id="11" parent="1" name="user_piano"/>
+    <table id="12" parent="1" name="users"/>
+    <column id="13" parent="8" name="migration">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="14" parent="8" name="batch">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="15" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="16" parent="9" name="pianoname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="17" parent="9" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="18" parent="9" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="19" parent="9" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="20" parent="10" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="21" parent="10" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="22" parent="10" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="23" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="24" parent="11" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="25" parent="11" name="piano_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="26" parent="11" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="27" parent="11" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="28" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="29" parent="12" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="30" parent="12" name="username2">
+      <comment>name</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="31" parent="12" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;123456&apos;</default-expression>
+    </column>
+    <column id="32" parent="12" name="phone">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="33" parent="12" name="class">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="34" parent="12" name="piano_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="35" parent="12" name="created_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <column id="36" parent="12" name="updated_at">
+      <data-type>timestamp|0</data-type>
+    </column>
+  </database-model>
+</dataSource>
